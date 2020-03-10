@@ -67,7 +67,7 @@ blockquote {
 }
 
 ::selection {
-	color: #fff;
+	color: #0085a1;
 	background: #0085a1;
 	text-shadow: none
 }
@@ -90,13 +90,14 @@ img::-moz-selection {
 #mainNav {
 	position: absolute;
 	border-bottom: 1px solid #e9ecef;
-	background-color: #fff;
+	background-color: 
+#004464;
 	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
 #mainNav .navbar-brand {
 	font-weight: 800;
-	color: #343a40
+	color: #337a9d
 }
 
 #mainNav .navbar-toggler {
@@ -104,7 +105,7 @@ img::-moz-selection {
 	font-weight: 800;
 	padding: 13px;
 	text-transform: uppercase;
-	color: #343a40
+	color: #fff
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -122,7 +123,11 @@ img::-moz-selection {
 
 	#mainNav .navbar-brand {
 		padding: 10px 20px;
+<<<<<<< HEAD
+		color: #fff
+=======
 		color: #FFFFFF
+>>>>>>> 234a1a9e7432da703fce13597ce336e9f29cb91e
 	}
 
 	#mainNav .navbar-brand:focus,
@@ -157,7 +162,11 @@ img::-moz-selection {
 	}
 
 	#mainNav.is-fixed .navbar-brand {
+<<<<<<< HEAD
+		color: #337a9d
+=======
 		color: #FFFFFF
+>>>>>>> 234a1a9e7432da703fce13597ce336e9f29cb91e
 	}
 
 	#mainNav.is-fixed .navbar-brand:focus,
@@ -306,7 +315,7 @@ header.masthead .post-heading .meta a {
 	font-size: 18px;
 	font-style: italic;
 	margin-top: 0;
-	color: #868e96
+	color: #004464
 }
 
 .post-preview > .post-meta > a {
@@ -317,7 +326,7 @@ header.masthead .post-heading .meta a {
 .post-preview > .post-meta > a:focus,
 .post-preview > .post-meta > a:hover {
 	text-decoration: underline;
-	color: #0085a1
+	color: #058cfa
 }
 
 @media only screen and (min-width:768px) {
