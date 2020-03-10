@@ -6,7 +6,9 @@
 body {
 	font-size: 20px;
 	color: #212529;
-	font-family: Lora, 'Times New Roman', serif
+	font-family: Lora, 'Times New Roman', serif;
+	background: #005984;
+		
 }
 
 p {
@@ -16,6 +18,15 @@ p {
 
 p a {
 	text-decoration: underline
+}
+
+.listOfStuff{
+	background-color:#fff;
+	border: 5px solid #212529;
+	border-radius: .7;
+	margin: 15px;
+		
+	
 }
 
 h1,
@@ -97,7 +108,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
 	font-weight: 800;
-	color: #337a9d
+	color: #fff
 }
 
 #mainNav .navbar-toggler {
@@ -112,7 +123,8 @@ img::-moz-selection {
 	font-size: 15px;
 	font-weight: 800;
 	letter-spacing: 1px;
-	text-transform: uppercase
+	text-transform: uppercase;
+		color: #fff
 }
 
 @media only screen and (min-width:992px) {
@@ -158,29 +170,29 @@ img::-moz-selection {
 		top: -67px;
 		transition: transform .2s;
 		border-bottom: 1px solid #fff;
-		background-color: rgba(255, 255, 255, .9)
+		background-color: rgba(0,89,132,.8)
 	}
 
 	#mainNav.is-fixed .navbar-brand {
 <<<<<<< 
-		color: #337a9d
+		
 =======
-		color: #FFFFFF
+		color: #fff
 >>>>>>> 234a1a9e7432da703fce13597ce336e9f29cb91e
 	}
 
 	#mainNav.is-fixed .navbar-brand:focus,
 	#mainNav.is-fixed .navbar-brand:hover {
-		color: #FFFFFF
+		color: #003147
 	}
 
 	#mainNav.is-fixed .navbar-nav > li.nav-item > a {
-		color: #FFFFFF
+		color: #fff
 	}
 
 	#mainNav.is-fixed .navbar-nav > li.nav-item > a:focus,
 	#mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-		color: #FFFFFF
+		color: #003147
 	}
 
 	#mainNav.is-visible {
@@ -291,7 +303,9 @@ header.masthead .post-heading .meta a {
 }
 
 .post-preview > a {
-	color: #212529
+	color: #212529;
+	background: #fff;
+	
 }
 
 .post-preview > a:focus,
@@ -326,7 +340,7 @@ header.masthead .post-heading .meta a {
 .post-preview > .post-meta > a:focus,
 .post-preview > .post-meta > a:hover {
 	text-decoration: underline;
-	color: #058cfa
+	color: #fff
 }
 
 @media only screen and (min-width:768px) {
