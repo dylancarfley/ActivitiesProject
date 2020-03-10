@@ -162,7 +162,7 @@ img::-moz-selection {
 	}
 
 	#mainNav.is-fixed .navbar-brand {
-<<<<<<< HEAD
+<<<<<<< 
 		color: #337a9d
 =======
 		color: #FFFFFF
@@ -203,7 +203,7 @@ header.masthead .overlay {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-color: #212529;
+	/*img shader*/background-color: #212529;
 	opacity: .5
 }
 
@@ -428,7 +428,7 @@ footer .copyright {
 .btn-primary:focus,
 .btn-primary:hover {
 	color: #fff;
-	background-color: #00657b !important;
+	background-color: #fff !important;
 	border-color: #00657b !important
 }
 
