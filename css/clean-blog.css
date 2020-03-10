@@ -371,6 +371,8 @@ form .form-group:first-child .floating-label-form-group {
 
 footer {
   padding: 50px 0 65px;
+	background-color: #fff;
+	
 }
 
 footer .list-inline {
