@@ -114,7 +114,7 @@
                         <input type="number" name="Number of members" placeholder="Number of Current Memebers" id="Number of Current Memebers">
                         <br>
                         <br>
-                        <input type="submit" value="Email" onclick="window.print()">
+                        <input type="submit" value="Email" onclick="sendMail();">
                     </fieldset>
 
                 </form>
@@ -143,6 +143,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+    <script src="tracker.js"></script>
 
 </body>
 
