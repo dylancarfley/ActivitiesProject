@@ -69,53 +69,55 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                
-                  <img src="img/PTCForm.PNG" alt="Ptc logo" title="Ptc logo">
-                
-                <form action="">
+            <div class="col">
+            </div>
+            <div class="col-lg-8 col-md-10 mx-auto bgWhite">
+
+
+                <form action="" class="pad">
+
+                    <img class="img-fluid" src="img/PTCForm.PNG" alt="Ptc logo" title="Ptc logo">
 
                     <fieldset>
                         <legend>
-                            <h2>Meeting/Event Tracker Sheet</h2>
+                            <h2>Check Request Form</h2>
                         </legend>
-                        Name of Student Organization:
+                        Request for payment to:
                         <br>
-                        <input type="text" name="NameOfStudentsOrganization" placeholder="Name Of Students Organization" id="name">
+                        <input size="26" type="text" name="NameOfStudentsOrganization" placeholder="Full Name of Payee/Organization" id="name">
                         <br>
-                        <br> Name and Email of student Organzaition Representive:
+                        <br>Amount to be paid:
                         <br>
-                        <input type="text" name="NameTacher" placeholder="Teachers Name" id="TeacherName">
-                        <input type="email" name="TeacherEmail" placeholder="Teachers Email" id="TeacherEmail">
+                        $<input type="number" name="amount" placeholder="amount" id="amount">
+                        
                         <br>
-                        <br>Date / Time of Meeting / Event
+                        <br>Reason for reqeust:
+                        <br>
+                        <input size="45" type="text" name="reason" placeholder="description" id="reason">
+                        <br>
+                        <br> Individual requesting check:
+                        <br>
+                        <input type="text" name="person" placeholder="full name" id="person">
+                        <br>
+                        <br> Organization to be charged:
+                        <br>
+                        <input type="text" name="charged" placeholder="Organization" id="charged">
+                        <br>
+                        <br> Indicate what date this check is needed:
                         <br>
                         <input type="Date" name="Date" placeholder="Date" id="Date">
-                        <input type="time" name="MeetingTime" placeholder="Time of Meeeting" id="MeetingTime">
-                        <input type="text" name="Event" placeholder="Event" id="Event">
                         <br>
-                        <br> Number of Attending Memebers at Meeting/Event
+                        <br> Comments:
                         <br>
-                        <input type="number" name="Attending members" placeholder="People Attending Event" id="Attending members">
-                        <br>
-                        <br> Cost for Meeting/Event
-                        <br>
-                        <input type="number" name="Attending members" placeholder="Cost of Meeting/Event" id="Attending members">
-                        <br>
-                        <br> Future Events Your Attending
-                        <br>
-                        <input type="text" name="FutureEvents" placeholder="Future Events" id="FutureEvents">
-                        <br>
-                        <br> Number of Current Memebers
-                        <br>
-                        <input type="number" name="Number of members" placeholder="Number of Current Memebers" id="Number of Current Memebers">
+                        <input type="text" name="comment" placeholder="comments" id="comment">
                         <br>
                         <br>
-                        <input type="submit" value="Save as PDF" onclick="window.print()">
+                        <input type="submit" value="Email" onclick="window.print()">
                     </fieldset>
 
                 </form>
             </div>
+            <div class="col"></div>
         </div>
     </div>
 
@@ -140,4 +142,6 @@
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
 
-</body></html>
+</body>
+
+</html>
