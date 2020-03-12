@@ -20,13 +20,15 @@ p a {
 	text-decoration: underline
 }
 
-.listOfStuff{
+.bgWhite{
 	background-color:#fff;
-	border: 5px solid #212529;
-	border-radius: .7;
+	border-radius: 25px;
 	margin: 15px;
 		
 	
+}
+.pad{
+    padding: 10px;
 }
 
 h1,
