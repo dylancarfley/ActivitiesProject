@@ -69,52 +69,52 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                
-                  <img src="img/PTCForm.PNG" alt="Ptc logo" title="Ptc logo">
-                
-                <form action="">
+            <div class="col">
+            </div>
+            <div class="col-lg-8 col-md-10 mx-auto bgWhite">
+
+
+                <form action="" class="pad">
+
+                    <img class="img-fluid" src="img/PTCForm.PNG" alt="Ptc logo" title="Ptc logo">
 
                     <fieldset>
                         <legend>
-                            <h2>Fundraiser Request Form</h2>
+                            <h2>Fundraising Request Form</h2>
                         </legend>
-                        <!--1-->Name of Student Organization:
+                        Name of Organization:
                         <br>
-                        <input type="text" name="NameOfStudentsOrganization" placeholder="Name Of Students Organization" id="name">
+                        <input type="text" name="NameOfStudentsOrganization" placeholder="Name Of Organization" id="name">
                         <br>
-                        <!--2--><br> Contact person and email:
+                        <br> Contact person and email:
                         <br>
                         <input type="text" name="NameTacher" placeholder="Teachers Name" id="TeacherName">
                         <input type="email" name="TeacherEmail" placeholder="Teachers Email" id="TeacherEmail">
                         <br>
-                        <!--3--><br>Proposed date of fundraiser:
+                        <br>Proposed date of fundraiser:
                         <br>
                         <input type="Date" name="Date" placeholder="Date" id="Date">
                         <input type="time" name="MeetingTime" placeholder="Time of Meeeting" id="MeetingTime">
                         <br>
-                       <!--4--> <br> Number of Attending Members at Meeting/Event
+                        <br>Description of fundraiser:
                         <br>
-                        <input type="number" name="Attending members" placeholder="People Attending Event" id="Attending members">
+                        <input size="40" type="text" name="Event" placeholder="description" id="Event">
                         <br>
-                       <!--5--> <br> Cost for Meeting/Event
+                        <br> Location of fundraiser:
                         <br>
-                        <input type="number" name="Attending members" placeholder="Cost of Meeting/Event" id="Attending members">
+                        <input type="text" name="location" placeholder="Location" id="location">
                         <br>
-                        <!--6--><br> Future Events Your Attending
+                        <br> Estimated upfront cost to organization:
                         <br>
-                        <input type="text" name="FutureEvents" placeholder="Future Events" id="FutureEvents">
-                        <br>
-                       <!--7--> <br> Number of Current Memebers
-                        <br>
-                        <input type="number" name="Number of members" placeholder="Number of Current Memebers" id="Number of Current Memebers">
+                        $<input type="number"  name="Attending members" placeholder="Cost" id="Attending members">
                         <br>
                         <br>
-                        <input type="submit" value="Save as PDF" onclick="window.print()">
+                        <input type="submit" value="Email" onclick="window.print()">
                     </fieldset>
 
                 </form>
             </div>
+            <div class="col"></div>
         </div>
     </div>
 
@@ -139,4 +139,6 @@
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
 
-</body></html>
+</body>
+
+</html>
