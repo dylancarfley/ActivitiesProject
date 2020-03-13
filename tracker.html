@@ -114,7 +114,7 @@
                         <input type="number" name="Number of members" placeholder="Number of Current Memebers" id="Number of Current Memebers">
                         <br>
                         <br>
-                        <input type="submit" value="Email" onclick="sendMail();">
+                        <input type="button" value="Click to send email" onclick="sendMail();">
                     </fieldset>
 
                 </form>
@@ -145,7 +145,26 @@
     <script src="js/clean-blog.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js">
         </script>
-    <script src="tracker.js"></script>
+     <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+    
+        <script>
+            function sendMail() {
+                var custName = document.getElementById("name").value;
+    
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "",
+                    Password: "",
+                    To: 'cottrell.lee@ptcollege.edu',
+                    From: "cottrell.lee@ptcollege.edu",
+                    Subject: "Form Data",
+                    Body: "Customer name: " + custName
+                }).then(
+                    message => alert(message)
+                );
+            }
+        </script>
 
 </body>
 
