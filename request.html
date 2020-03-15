@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Fundraiser Form</title>
+    <title>Check Request Form</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -89,7 +89,7 @@
                         <br>Amount to be paid:
                         <br>
                         $<input type="number" name="amount" placeholder="amount" id="amount">
-                        
+
                         <br>
                         <br>Reason for reqeust:
                         <br>
@@ -141,27 +141,28 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/clean-blog.min.js"></script>
-    
+
     <script src="https://smtpjs.com/v3/smtp.js">
-        </script>
-    
-        <script>
-            function sendMail() {
-                var custName = document.getElementById("name").value;
-    
-                Email.send({
-                    Host: "smtp.elasticemail.com",
-                    Username: "",
-                    Password: "",
-                    To: 'cottrell.lee@ptcollege.edu',
-                    From: "cottrell.lee@ptcollege.edu",
-                    Subject: "Form Data",
-                    Body: "Customer name: " + custName
-                }).then(
-                    message => alert(message)
-                );
-            }
-        </script>
+    </script>
+
+    <script>
+        function sendMail() {
+            var custName = document.getElementById("name").value;
+
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "",
+                Password: "",
+                To: 'cottrell.lee@ptcollege.edu',
+                From: "cottrell.lee@ptcollege.edu",
+                Subject: "Form Data",
+                Body: "Customer name: " + custName
+            }).then(
+                message => alert(message)
+            );
+        }
+
+    </script>
 
 </body>
 
