@@ -120,7 +120,7 @@
                         <br>
                         <br>Description of fundraiser:
                         <br>
-                        <input size="40" type="text" name="Event" placeholder="description" id="Event">
+                        <input size="40" type="text" name="Event" placeholder="description" id="description">
                         <br>
                         <br> Location of fundraiser:
                         <br>
@@ -128,10 +128,10 @@
                         <br>
                         <br> Estimated upfront cost to organization:
                         <br>
-                        $<input type="number"  name="Attending members" placeholder="Cost" id="Attending members">
+                        $<input type="number"  name="cost" placeholder="Cost" id="cost">
                         <br>
                         <br>
-                        <input type="submit" value="Email" onclick="window.print()">
+                        <input type="button" value="Click to send email" onclick="sendMail();">
                     </fieldset>
 
                 </form>
@@ -166,7 +166,14 @@
     
         <script>
             function sendMail() {
-                var custName = document.getElementById("name").value;
+                var name = document.getElementById("name").value;
+                var teachName = document.getElementById("TeacherName").value;
+                var teachEmail = document.getElementById("TeacherEmail").value;
+                var Date = document.getElementById("Date").value;
+                var time = document.getElementById("MeetingTime").value;
+                var description = document.getElementById("description").value;
+                var location = document.getElementById("location").value;
+                var cost = document.getElementById("cost").value;
     
                 Email.send({
                     Host: "smtp.elasticemail.com",
@@ -175,7 +182,15 @@
                     To: 'cottrell.lee@ptcollege.edu',
                     From: "cottrell.lee@ptcollege.edu",
                     Subject: "Form Data",
-                    Body: "Customer name: " + custName
+                    Body: 
+                    "Name of Organization: " + name + 
+                  " : Contact person: " + teachName + 
+                  " : Contact email: " + teachEmail + 
+                  " : Proposed date: " + Date + 
+                  " : Time of event: " + time + 
+                  " : Description: " + description + 
+                  " : Location: " + location + 
+                  " :Estimated Cost: $" + cost
                 }).then(
                     message => alert(message)
                 );

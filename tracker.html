@@ -91,10 +91,13 @@
                         <input type="text" name="NameTacher" placeholder="Teachers Name" id="TeacherName">
                         <input type="email" name="TeacherEmail" placeholder="Teachers Email" id="TeacherEmail">
                         <br>
-                        <br>Date / Time of Meeting / Event
+                        <br>Date / Time of Meeting
                         <br>
                         <input type="Date" name="Date" placeholder="Date" id="Date">
                         <input type="time" name="MeetingTime" placeholder="Time of Meeeting" id="MeetingTime">
+                        <br>
+                        <br> Event
+                        <br>
                         <input type="text" name="Event" placeholder="Event" id="Event">
                         <br>
                         <br> Number of Attending Memebers at Meeting/Event
@@ -103,7 +106,7 @@
                         <br>
                         <br> Cost for Meeting/Event
                         <br>
-                        <input type="number" name="Attending members" placeholder="Cost of Meeting/Event" id="Attending members">
+                        <input type="number" name="cost" placeholder="Cost of Meeting/Event" id="cost">
                         <br>
                         <br> Future Events Your Attending
                         <br>
@@ -150,7 +153,16 @@
 
     <script>
         function sendMail() {
-            var custName = document.getElementById("name").value;
+            var name = document.getElementById("name").value;
+            var teachName = document.getElementById("TeacherName").value;
+            var teachEmail = document.getElementById("TeacherEmail").value;
+            var date = document.getElementById("Date").value;
+            var time = document.getElementById("MeetingTime").value;
+            var event = document.getElementById("Event").value;
+            var attendence = document.getElementById("Attending members").value;
+            var cost = document.getElementById("cost").value;
+            var futureEvents = document.getElementById("FutureEvents").value;
+            var numMembers = document.getElementById("Number of Current Members").value;
 
             Email.send({
                 Host: "smtp.elasticemail.com",
@@ -159,7 +171,17 @@
                 To: 'cottrell.lee@ptcollege.edu',
                 From: "cottrell.lee@ptcollege.edu",
                 Subject: "Form Data",
-                Body: "Customer name: " + custName
+                Body: 
+                  "Name of Organization: " + name + 
+                  " : Contact person: " + teachName + 
+                  " : Contact email: " + teachEmail + 
+                  " : Proposed date: " + Date + 
+                  " : Time of event: " + time +
+                  " : Name of event: " + event +
+                  " : Number of members attending: " + description + 
+                  " :Estimated Cost: $" + cost
+                  " : Future planned events: " + futureEvents + 
+                  " :Number of Current Members: " + numMembers              
             }).then(
                 message => alert(message)
             );
