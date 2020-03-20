@@ -84,7 +84,7 @@
                         </legend>
                         Request for payment to:
                         <br>
-                        <input size="26" type="text" name="NameOfStudentsOrganization" placeholder="Full Name of Payee/Organization" id="name">
+                        <input size="27" type="text" name="NameOfStudentsOrganization" placeholder="Full Name of Payee/Organization" id="name">
                         <br>
                         <br>Amount to be paid:
                         <br>
@@ -157,13 +157,13 @@
 
             Email.send({
                 Host: "smtp.elasticemail.com",
-                Username: "",
-                Password: "",
+                Username: "cottrell.lee@ptcollege.edu",
+                Password: "8BD8481A64E03595954AC880AF6EA293A46F",
                 To: 'cottrell.lee@ptcollege.edu',
                 From: "cottrell.lee@ptcollege.edu",
                 Subject: "Form Data",
                 Body: 
-                  "Request for payment to: " + name + 
+                  "Check Request Form | Request for payment to: " + name + 
                   " : Amount to be paid: " + amount + 
                   " : Reason for request: " + reason + 
                   " : Individual requesting check: " + request + 

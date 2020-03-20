@@ -106,7 +106,7 @@
                         <br>
                         <br> Cost for Meeting/Event
                         <br>
-                        <input type="number" name="cost" placeholder="Cost of Meeting/Event" id="cost">
+                        $<input type="number" name="cost" placeholder="Cost of Meeting/Event" id="cost">
                         <br>
                         <br> Future Events Your Attending
                         <br>
@@ -114,7 +114,7 @@
                         <br>
                         <br> Number of Current Memebers
                         <br>
-                        <input type="number" name="Number of members" placeholder="Number of Current Memebers" id="Number of Current Memebers">
+                        <input type="number" name="Number of members" placeholder="Number of Memebers" id="Number of Current Memebers">
                         <br>
                         <br>
                         <input type="button" value="Click to send email" onclick="sendMail();">
@@ -166,13 +166,13 @@
 
             Email.send({
                 Host: "smtp.elasticemail.com",
-                Username: "",
-                Password: "",
+                Username: "cottrell.lee@ptcollege.edu",
+                Password: "8BD8481A64E03595954AC880AF6EA293A46F",
                 To: 'cottrell.lee@ptcollege.edu',
                 From: "cottrell.lee@ptcollege.edu",
                 Subject: "Form Data",
                 Body: 
-                  "Name of Organization: " + name + 
+                  "Meeting/Event Tracker Form | Name of Organization: " + name + 
                   " : Contact person: " + teachName + 
                   " : Contact email: " + teachEmail + 
                   " : Proposed date: " + Date + 
